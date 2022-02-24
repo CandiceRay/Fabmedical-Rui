@@ -20,9 +20,9 @@ on:
 # resourceGroupName，containerRegistryName，containerRegistry替换为自己的
 env:
  imageRepository: 'content-web'
- resourceGroupName: 'fabmedical-pim'
- containerRegistryName: 'fabmedicalpim'
- containerRegistry: 'fabmedicalpim.azurecr.cn'
+ resourceGroupName: 'luor6'
+ containerRegistryName: 'fabmedicaRui'
+ containerRegistry: 'fabmedicalrui.azurecr.cn'
  dockerfilePath: './content-web'
  tag: '${{ github.run_id  }}'
 
@@ -55,4 +55,4 @@ jobs:
         push: true
         tags: |
           ${{ env.containerRegistry }}/${{ env.imageRepository }}:${{ env.tag }}
-          ${{ env.containerRegistry }}/${{ env.imageRepository }}:latest
+          ${{ env.containerRegistry }}/${{ env.imageRepository }}:latesti
