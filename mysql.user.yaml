@@ -1,8 +1,0 @@
-kind: Secret
-apiVersion: v1
-metadata:
-  name: mysql-user
-  namespace: default
-data:
-  MYSQL_USER: cm9vdA==
-type: Opaque
