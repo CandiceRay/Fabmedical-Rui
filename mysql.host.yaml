@@ -1,8 +1,0 @@
-kind: Secret
-apiVersion: v1
-metadata:
-  name: mysql-host
-  namespace: default
-data:
-  MYSQL_HOST: bXlzcWw=
-type: Opaque
